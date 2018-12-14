@@ -1,0 +1,9 @@
+.vscode/settings.json
+.vscode/launch.json
+algrothims/.classpath
+algrothims/.project
+algrothims/.settings/org.eclipse.core.resources.prefs
+algrothims/.settings/org.eclipse.jdt.apt.core.prefs
+algrothims/.settings/org.eclipse.jdt.core.prefs
+algrothims/.settings/org.eclipse.m2e.core.prefs
+algrothims/target/*
