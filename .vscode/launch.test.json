@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "algrothims",
+                "projectName": "algrothims",
+                "workingDirectory": "e:\\workfile\\develop\\StandardAlgorithms\\algrothims",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "algrothims",
+                "projectName": "algrothims",
+                "workingDirectory": "e:\\workfile\\develop\\StandardAlgorithms\\algrothims",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
