@@ -8,3 +8,5 @@ algrothims/.settings/org.eclipse.jdt.core.prefs
 algrothims/.settings/org.eclipse.m2e.core.prefs
 algrothims/target/*
 algrothims/.*
+.vscode/launch.test.json
+.gitignore
