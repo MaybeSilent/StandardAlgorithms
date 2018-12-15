@@ -7,3 +7,4 @@ algrothims/.settings/org.eclipse.jdt.apt.core.prefs
 algrothims/.settings/org.eclipse.jdt.core.prefs
 algrothims/.settings/org.eclipse.m2e.core.prefs
 algrothims/target/*
+algrothims/.*
