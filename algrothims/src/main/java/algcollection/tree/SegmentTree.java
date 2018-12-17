@@ -4,7 +4,7 @@ date: 12-14-2018
 this file shows the differences between segmentTree in  sum , xor max and min
 */
 
-package algcollection;
+package algcollection.tree;
 
 public class SegmentTree {
     int[] streeOfMax, streeOfMin, streeOfSum, streeOfXor;
