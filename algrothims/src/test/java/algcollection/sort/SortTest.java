@@ -30,6 +30,36 @@ public class SortTest {
 
     }
 
+    @Test
+    public void testQuick() {
+//        int[] arr = {9,8,21,32,5};
+//        QuickSort quickSort = new QuickSort(arr);
+//        quickSort.sort();
+//        int[] ans = quickSort.getArray();
+//        for (int i : ans) {
+//            System.out.println(i);
+//        }
+//
+        for (int testNum = 0; testNum < 100; testNum++) {
+            int[] arr = new int[5];
+            fillRandom(arr);
+
+            QuickSort quickSort = new QuickSort(arr);
+
+            quickSort.sort();
+
+            int[] ans = quickSort.getArray();
+
+            Arrays.sort(arr);
+
+            for (int i = 0; i < arr.length; i++) {
+                Assertions.assertArrayEquals(arr , ans);
+            }
+
+            System.out.println("TESTCASE:"+(testNum+1)+"✅") ;
+        }
+    }
+
 
     private void fillRandom(int[] arr) {
         Random random = new Random();
