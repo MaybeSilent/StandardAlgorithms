@@ -2,6 +2,7 @@ package algcollection.sort;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -21,10 +22,10 @@ public class SortTest {
             reverse(arr);
 
             for (int i = 0; i < arr.length; i++) {
-                Assertions.assertArrayEquals(arr , ans);
+                Assertions.assertArrayEquals(arr, ans);
             }
 
-            System.out.println("TESTCASE:"+(testNum+1)+"✅") ;
+            System.out.println("TESTCASE:" + (testNum + 1) + "✅");
         }
 
 
@@ -41,22 +42,23 @@ public class SortTest {
 //        }
 //
         for (int testNum = 0; testNum < 100; testNum++) {
-            int[] arr = new int[5];
+            int[] arr = new int[100];
             fillRandom(arr);
 
             QuickSort quickSort = new QuickSort(arr);
 
-            quickSort.sort();
+            quickSort.sortNotKnown(0, arr.length - 1);
+//            quickSort.sort();
 
             int[] ans = quickSort.getArray();
 
             Arrays.sort(arr);
 
             for (int i = 0; i < arr.length; i++) {
-                Assertions.assertArrayEquals(arr , ans);
+                Assertions.assertArrayEquals(arr, ans);
             }
 
-            System.out.println("TESTCASE:"+(testNum+1)+"✅") ;
+            System.out.println("TESTCASE:" + (testNum + 1) + "✅");
         }
     }
 

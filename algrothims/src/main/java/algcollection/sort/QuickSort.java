@@ -60,6 +60,35 @@ public class QuickSort {
         return i;
     }
 
+    public void sortNotKnown(int left, int right) {
+        if (left >= right) return;
+        int divided = dividedNotKnown(left, right);
+
+        sortNotKnown(left, divided - 1);
+
+        sortNotKnown(divided, right);
+    }
+
+    private int dividedNotKnown(int left, int right) {
+        int mid = (left + right) / 2;
+        int pivot = array[mid];
+
+        while (left <= right) {
+            while (array[left] < pivot) {
+                ++left;
+            }
+            while (pivot < array[right]) {
+                --right;
+            }
+            if (left <= right) {
+                swap(left, right);
+                ++left;
+                --right;
+            }
+        }
+        return left;
+    }
+
     private void swap(int n, int m) {
         int temp = array[n];
         array[n] = array[m];
