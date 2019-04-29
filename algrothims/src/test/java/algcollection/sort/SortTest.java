@@ -42,7 +42,7 @@ public class SortTest {
 //        }
 //
         for (int testNum = 0; testNum < 100; testNum++) {
-            int[] arr = new int[100];
+            int[] arr = new int[5];
             fillRandom(arr);
 
 //            QuickSort quickSort = new QuickSort(arr);
@@ -52,9 +52,10 @@ public class SortTest {
 
 //            int[] ans = quickSort.getArray();
 
-            BubbleSort bubbleSort = new BubbleSort(arr);
-            int[] ans = bubbleSort.sort();
-
+//            BubbleSort bubbleSort = new BubbleSort(arr);
+//            int[] ans = bubbleSort.sort();
+            MergeSort mergeSort = new MergeSort(arr);
+            int[] ans = mergeSort.sort();
             Arrays.sort(arr);
 
             for (int i = 0; i < arr.length; i++) {
