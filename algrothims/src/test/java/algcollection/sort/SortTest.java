@@ -45,12 +45,15 @@ public class SortTest {
             int[] arr = new int[100];
             fillRandom(arr);
 
-            QuickSort quickSort = new QuickSort(arr);
+//            QuickSort quickSort = new QuickSort(arr);
 
-            quickSort.sortNotKnown(0, arr.length - 1);
+//            quickSort.sortNotKnown(0, arr.length - 1);
 //            quickSort.sort();
 
-            int[] ans = quickSort.getArray();
+//            int[] ans = quickSort.getArray();
+
+            BubbleSort bubbleSort = new BubbleSort(arr);
+            int[] ans = bubbleSort.sort();
 
             Arrays.sort(arr);
 
